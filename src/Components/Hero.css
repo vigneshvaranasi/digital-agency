@@ -1,0 +1,36 @@
+.hero-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.hero-left h1{
+    font-size: 3.5rem;
+}
+.hero-left{
+    max-width: 550px;
+}
+.hero-left p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.hero-left a{
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.hero-right{
+    max-width: auto;
+}
+.hero-right img{
+    width: 100%;
+    height: auto;
+}
