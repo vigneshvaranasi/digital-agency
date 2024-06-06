@@ -9,17 +9,22 @@ footer .containerNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 footer .containerNav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     padding-left: 0;
+    flex-wrap: wrap;
 }
+
 .containerNav ul li {
     padding: 20px;
 }
+
 footer .containerNav ul li a {
     color: #fff;
     text-decoration: none;
@@ -42,9 +47,11 @@ footer .containerNav ul li a:hover {
     padding: 18px;
     padding-bottom: 0;
 }
-.copy p{
+
+.copy p {
     margin: 40px 0;
 }
+
 .copy p span a {
     margin-left: 30px;
     text-decoration: underline;
@@ -55,14 +62,16 @@ footer .containerNav ul li a:hover {
     color: #B9FF66;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     padding: 0px 20px;
+    flex-wrap: wrap;
 }
-.contact .address h2{
+
+.contact .address h2 {
     font-size: 1.5rem;
     background-color: #B9FF66;
     border-radius: 5px;
@@ -71,21 +80,28 @@ footer .containerNav ul li a:hover {
     display: inline-block;
     margin: 0;
 }
-.sub{
+
+.contact .address {
+    width: 30%;
+}
+
+.sub {
     background-color: #292A32;
     border-radius: 15px;
     margin: 20px 5px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 60px;
+    margin: 4vw;
     flex-wrap: wrap;
     gap: 10px;
 }
-.sub form input{
+
+.sub form input {
     padding: 15.3px;
     border-radius: 10px;
     border: 1px solid #ffff;
@@ -93,7 +109,8 @@ form{
     font-size: 1rem;
     color: #fff;
 }
-.sub form button{
+
+.sub form button {
     padding: 14px;
     border-radius: 10px;
     border: 1px solid #B9FF66;
@@ -103,8 +120,65 @@ form{
     cursor: pointer;
     transition: ease 0.5s;
 }
-.sub form button:hover{
+
+.sub form button:hover {
     background-color: #292A32;
     color: #B9FF66;
     transition: ease 0.5s;
+}
+@media screen and (max-width:900px) {
+    .sub form input {
+        width: 100%;
+    }
+    .sub form button {
+        width: 100%;
+    }
+    .contact .address {
+        width: 50%;
+    }
+    .sub{
+        width: 45%;
+    }    
+}
+
+@media screen and (max-width:720px) {
+    .contact .address {
+        width: 100%;
+    }
+
+    footer .containerNav ul {
+        justify-content: start;
+        align-items: center;
+        }
+        
+        footer .containerNav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .containerNav ul li {
+        padding: 5px;
+    }
+    .contact .address,.sub {
+        width: 100%;
+    }
+    .contact {
+        justify-content: center;
+    }
+
+    .sub form input {
+        width: 100%;
+    }
+
+    .sub form button {
+        width: 100%;
+    }
+    .copy p span a {
+        display: block;
+        padding: 10px;
+    }
+    .copy{
+        text-align: center;
+    }
+
 }
