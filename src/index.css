@@ -5,9 +5,21 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   padding: 0;
   margin: 35px;
   margin-top: 10px;
   margin-bottom: 0px;
+
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 5px;
+  }
+}
+::selection {
+  color: #B9FF66;
+  background-color: #000;
 }

@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './Components/Footer';
 import Nav from './Components/Nav';
-import Hero from './Components/Hreo';
+import Hero from './Components/Hero';
 
 function App(){
   return (

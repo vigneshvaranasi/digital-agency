@@ -1,22 +1,28 @@
-.hero-sec{
+.hero-sec {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     padding: 0 20px;
     flex-wrap: wrap;
+    margin-top: -30px;
 }
-.hero-left h1{
+
+.hero-left h1 {
     font-size: 3.5rem;
+    max-width: 100%;
 }
-.hero-left{
-    max-width: 550px;
+
+.hero-left {
+    max-width: 45%;
 }
-.hero-left p{
+
+.hero-left p {
     font-size: 1.2rem;
     margin-top: 20px;
     padding-bottom: 20px;
 }
-.hero-left a{
+
+.hero-left a {
     padding: 14px;
     border-radius: 10px;
     border: 1px solid #000000;
@@ -26,11 +32,85 @@
     cursor: pointer;
     text-decoration: none;
     margin-top: 20px;
+    transition: all 0.3s ease-in-out;
 }
-.hero-right{
-    max-width: auto;
+
+.hero-left a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
 }
-.hero-right img{
+
+.hero-left img {
+    display: none;
+}
+
+.hero-right {
+    max-width: 50%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.hero-right img {
     width: 100%;
     height: auto;
+}
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.companies img {
+    object-fit: contain;
+    filter: grayscale(100%);
+    margin: 10px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .hero-sec {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-left p {
+        font-size: 1rem;
+    }
+
+    .hero-left img {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-right {
+        display: none;
+    }
+
+}
+
+/* Tab View */
+@media screen and (min-width: 800px) and (max-width: 963px) {
+    .hero-left {
+        max-width: 45%;
+    }
+
+    .hero-right {
+        max-width: 50%;
+    }
+
 }

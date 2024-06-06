@@ -101,6 +101,7 @@ form{
     color: #000;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: ease 0.5s;
 }
 .sub form button:hover{
     background-color: #292A32;
